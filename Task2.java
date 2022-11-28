@@ -16,7 +16,7 @@ public class Task2 {
     }
 
     public static LinkedList<Integer> dequeue(LinkedList<Integer> ll2){
-        System.out.printf("Первый элемент в очереди равен:" + ll2.getFirst()+"\n");
+        System.out.printf("Первый элемент в очереди равен:" + ll2.getFirst()+" удаляем его и получаем список:\n");
         ll2.remove(0);
         return ll2;
     }
@@ -32,6 +32,7 @@ public class Task2 {
         ll.add(1);
         ll.add(2);
         ll.add(3);
+        System.out.printf("Задан список из элементов: 1,2,3\n");
         System.out.printf("Выберете какую функцию вы хотите сделать:\n 1 - помещает элемент в конец очереди \n 2 - возвращает первый элемент из очереди и удаляет его \n 3 - возвращает первый элемент из очереди, не удаляя\n");
         Scanner Sc = new Scanner(System.in);
         Integer st = Sc.nextInt(); 
