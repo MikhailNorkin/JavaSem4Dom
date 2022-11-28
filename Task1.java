@@ -1,4 +1,5 @@
 //Пусть дан LinkedList с несколькими элементами. Реализуйте метод, который вернет “перевернутый” список.
+
 package JavaSem4Dom;
 
 import java.util.LinkedList;
@@ -7,10 +8,8 @@ import java.util.Stack;
 public class Task1 {
     public static LinkedList<Integer> perev(LinkedList<Integer> ll1) {
         Stack<Integer> sl = new Stack<>();
+        sl.addAll(0, ll1);
         LinkedList<Integer> ll2 = new LinkedList<>();
-        for (Integer element : ll1) {
-            sl.add(element);
-        }
         while(!sl.empty()){
             ll2.add(sl.pop());
         }
