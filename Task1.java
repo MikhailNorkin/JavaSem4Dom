@@ -9,14 +9,16 @@ import java.util.Stack;
  * Task1
  */
 public class Task1 {
-    public static void perev (LinkedList<Integer> ll2) {
+    public static LinkedList<Integer> perev(LinkedList<Integer> ll1) {
         Stack<Integer> sl = new Stack<>();
-        for (Integer element : ll2) {
+        LinkedList<Integer> ll2 = new LinkedList<>();
+        for (Integer element : ll1) {
             sl.add(element);
         }
         while(!sl.empty()){
-            System.out.println(sl.pop());
+            ll2.add(sl.pop());
         }
+        return ll2;
     }
 
     public static void main(String[] args) {
@@ -24,7 +26,8 @@ public class Task1 {
         ll1.add(1);
         ll1.add(2);
         ll1.add(3);
-        //LinkedList<Integer> ll2 = new LinkedList();
-        perev(ll1);
+        LinkedList<Integer> ll2 = new LinkedList();
+        ll2 = perev(ll1);
+        System.out.println(ll2);
     }
 }
