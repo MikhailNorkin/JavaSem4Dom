@@ -27,7 +27,7 @@ public class Task3 {
             if (expression.equals("ОТМЕНА")) {
                 a = resEnd;
                 System.out.printf(a+"\n");
-                System.out.println("Введите выражение: ");        
+                System.out.println("Введите выражение или наберите КОНЕЦ или ОТМЕНА: ");        
                 String expression1 = Sk.nextLine();
                 expression = expression1;    
             } 
@@ -53,7 +53,7 @@ public class Task3 {
                 System.out.printf("Деление чисел %s и %s равно %s", a, b, res+"\n");
             }
             a = res;
-            System.out.println("Введите выражение: ");        
+            System.out.println("Введите выражение или наберите КОНЕЦ или ОТМЕНА: ");        
             String expression1 = Sk.nextLine();
             expression = expression1;
 
