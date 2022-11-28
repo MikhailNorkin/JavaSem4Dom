@@ -1,13 +1,9 @@
-package JavaSem4Dom;
-
 //Пусть дан LinkedList с несколькими элементами. Реализуйте метод, который вернет “перевернутый” список.
+package JavaSem4Dom;
 
 import java.util.LinkedList;
 import java.util.Stack;
 
-/**
- * Task1
- */
 public class Task1 {
     public static LinkedList<Integer> perev(LinkedList<Integer> ll1) {
         Stack<Integer> sl = new Stack<>();
